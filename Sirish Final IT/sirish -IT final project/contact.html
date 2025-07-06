@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contact - Sirish Royal Enfield Store</title>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      function validateForm() {
+        const name = document.forms[0].name.value;
+        const email = document.forms[0].email.value;
+        const message = document.forms[0].message.value;
+
+        if (!name || !email || !message) {
+          alert("Please fill in all fields.");
+          return false; // Prevent form submission
+        }
+        return true; // Allow form submission
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <a href="index.html">
+        <img
+          src="images/1.jpg"
+          alt="Sirish Royal Enfield Store Logo"
+          class="logo"
+        />
+      </a>
+      <h1>Sirish Royal Enfield Store</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="bikes.html">Bikes</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="sitemap.html">Sitemap</a>
+      </nav>
+    </header>
+    <main>
+      <h2>Contact Us</h2>
+      <form onsubmit="return validateForm();">
+        <label>Name:<br /><input type="text" name="name" /></label><br />
+        <label>Email:<br /><input type="email" name="email" /></label><br />
+        <label>Message:<br /><textarea name="message"></textarea></label><br />
+        <button type="submit">Send</button>
+      </form>
+      <p>Visit us at: Lazimpat, Kathmandu, Nepal</p>
+      <p>Phone: +977-986166262</p>
+    </main>
+    <footer>
+      <p>&copy; 2025 Sirish Royal Enfield Store</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Gallery - Sirish Royal Enfield Store</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        padding: 20px 0;
+        text-align: center;
+      }
+
+      .gallery-item img {
+        width: 100%;
+        border-radius: 6px;
+        transition: transform 0.3s;
+      }
+
+      .gallery-item img:hover {
+        transform: scale(1.05);
+      }
+
+      .caption {
+        margin-top: 8px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="index.html">
+        <img
+          src="images/1.jpg"
+          alt="Sirish Royal Enfield Store Logo"
+          class="logo"
+        />
+      </a>
+      <h1>Sirish Royal Enfield Store</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="bikes.html">Bikes</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="sitemap.html">Sitemap</a>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Photo Gallery</h2>
+      <div class="gallery">
+        <div class="gallery-item">
+          <a href="images/1.jpg" target="_blank"
+            ><img src="images/1.jpg" alt="Classic 350"
+          /></a>
+          <div class="caption">Our Logo</div>
+        </div>
+        <div class="gallery-item">
+          <a href="images/2.jpg" target="_blank"
+            ><img src="images/2.jpg" alt="Meteor 350"
+          /></a>
+          <div class="caption">Classic 650</div>
+        </div>
+        <div class="gallery-item">
+          <a href="images/3.jpg" target="_blank"
+            ><img src="images/3.jpg" alt="Himalayan"
+          /></a>
+          <div class="caption">Classic 350</div>
+        </div>
+        <div class="gallery-item">
+          <a href="images/4.webp" target="_blank"
+            ><img src="images/4.webp" alt="Store Front"
+          /></a>
+          <div class="caption">Shotgun 650</div>
+        </div>
+        <div class="gallery-item">
+          <a href="images/5.avif" target="_blank"
+            ><img src="images/5.avif" alt="Accessories"
+          /></a>
+          <div class="caption">Hunter 350</div>
+        </div>
+        <div class="gallery-item">
+          <a href="images/6.jpg" target="_blank"
+            ><img src="images/6.jpg" alt="Workshop"
+          /></a>
+          <div class="caption">Electra 350</div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Sirish Royal Enfield Store</p>
+    </footer>
+  </body>
+</html>
