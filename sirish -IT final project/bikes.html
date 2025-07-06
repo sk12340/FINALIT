@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bikes - Sirish Royal Enfield Store</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .bike-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        padding: 20px 0;
+      }
+
+      .bike-card {
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        padding: 16px;
+        text-align: center;
+      }
+
+      .bike-card img {
+        width: 100%;
+        height: auto;
+        border-radius: 6px;
+        transition: transform 0.3s ease;
+      }
+
+      .bike-card:hover img {
+        transform: scale(1.05);
+      }
+
+      .bike-card h3 {
+        margin: 12px 0 6px;
+      }
+
+      .bike-card p {
+        font-size: 0.95rem;
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="index.html">
+        <img
+          src="images/1.jpg"
+          alt="Sirish Royal Enfield Store Logo"
+          class="logo"
+        />
+      </a>
+      <h1>Sirish Royal Enfield Store</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="bikes.html">Bikes</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="sitemap.html">Sitemap</a>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Our Bikes</h2>
+      <p>
+        We specifically sell only these models here in Lainchaur. For more
+        variants, please visit our head office situated at Naxal.
+      </p>
+      <div class="bike-grid">
+        <div class="bike-card">
+          <img src="images/2.jpg" alt="Classic 350" />
+          <h3>Classic 350</h3>
+          <p>
+            Timeless design meets modern reliability. Perfect for daily rides.
+          </p>
+        </div>
+        <div class="bike-card">
+          <img src="images/3.jpg" alt="Meteor 350" />
+          <h3>Meteor 350</h3>
+          <p>Built for cruising. Smooth, stylish, and made for long rides.</p>
+        </div>
+        <div class="bike-card">
+          <img src="images/4.webp" alt="Himalayan" />
+          <h3>Himalayan</h3>
+          <p>
+            Conquer any terrain with confidence. The go-anywhere adventure bike.
+          </p>
+        </div>
+        <div class="bike-card">
+          <img src="images/5.avif" alt="Scram 411" />
+          <h3>Scram 411</h3>
+          <p>Urban agility meets Himalayan DNA. Nimble, bold, and versatile.</p>
+        </div>
+        <div class="bike-card">
+          <img src="images/6.jpg" alt="Interceptor 650" />
+          <h3>Interceptor 650</h3>
+          <p>
+            Retro styling with twin power. Classic roadster with a modern twist.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Sirish Royal Enfield Store</p>
+    </footer>
+  </body>
+</html>
